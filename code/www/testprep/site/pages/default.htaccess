@@ -1,0 +1,11 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+# 301 Redirect all requests that don't contain a dot or trailing slash to
+# include a trailing slash
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.
+RewriteRule ^(.*) %{REQUEST_URI}/ [R=301,L]
+
+# Rewrite all requests that do not contain a dot (.) to index.php
+RewriteRule !\. index.php

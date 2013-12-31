@@ -1,0 +1,46 @@
+body, textarea {
+   background-color:#000;
+   color:#fff;
+     font-size:20px;
+    font-family:verdana, arial, sans-serif;
+}
+ table, textarea { width: 100%; border:none; }
+ table { margin-left: auto; margin-right: auto; }
+h1 {text-align:center; color:gray; margin-top:.3em;  margin-bottom:0}
+img {border:0 }
+a {color:gold;}
+a:hover {color:red; text-decoration:none;}
+/* forms */
+.infobox {
+/*  text-align: center; */
+    clear: both;
+  padding: 5px;
+  margin: 30px;
+/*   border: 1px solid #ccc; */
+ /* background: #f9f9f9; */
+ color: lightgreen;
+    font-weight: bold;
+}
+input.default {
+  /* width: 98%; */
+   width: 240px;
+}
+.showafter { color:#000; }
+td.label {
+  width: 30%;
+  font-weight: bold;
+}
+table.list td { border: 1px solid #000; padding: 5px; }
+table.list { border-collapse: collapse;}
+.description, .button, .image { text-align: center; }
+.submit { float: right; }
+.cancel { float: left; }
+.error, .closed { color: #f00; }
+td.error {
+  border: outset 1px #f00;
+  padding: 2px;
+  background: #ffdcdc;
+}
+div.error, div.success {text-align:center; font-size:1.2em; font-weight: bold; }
+.success, .open { color: green; }
+.formlink { text-align: right; }

@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine on
+# Rewrite all requests without a file extension to index.php
+RewriteRule !\.([a-zA-Z]*)$ index.php

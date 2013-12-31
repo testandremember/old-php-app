@@ -1,0 +1,116 @@
+body {
+    background-color: #000;
+    font-size: 0.9em;
+    font-family: verdana, arial, sans-serif;
+    text-align: center;
+    margin: 0 40px 20px 40px;
+}
+h1 {
+    text-align: center;
+    margin-top: 0.3em;
+    margin-bottom:0;
+}
+img {
+    border:0;
+    vertical-align: middle;
+}
+#leftcol ul {
+    margin: 4px;
+    padding-left: 10px;
+    list-style-position: inside;
+}
+li {
+    margin-top: 1em;
+}
+a:hover {
+    color:red;
+    text-decoration:none;
+}
+#wrap {
+    text-align:left;
+}
+.logo {
+    float:left;
+}
+.description {
+    margin: 5px;
+    margin-left: 365px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1em;
+}
+.desctitle {
+    font-size: 0.75em;
+    margin-bottom: 0.5em;
+    margin-top: -0.5em;
+    text-align: center;
+}
+#main {
+    clear: both;
+    padding: 3px;
+    background-color: #b2b2b2;
+}
+#leftcol {
+    float: left;
+    width: 230px;
+}
+#leftcol li {
+    margin-top: 0;
+}
+#rightcol {
+    margin-left: 250px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #fff;
+}
+.heading {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px dotted #000;
+}
+.footer, .searchbar, .nav, .topnav {
+    padding: 5px;
+    background-color: #9fbce3;
+    border:1px solid #000;
+    margin-bottom: 20px;
+}
+.nav {
+    padding-bottom: 1em;
+}
+.created, .author, .modified {
+    font-style: italic;
+}
+.copyright {
+    text-align: center;
+    color: #fff;
+    font-size: 0.8em;
+}
+li.folder {
+    list-style-image: url("icons/folder.png");
+}
+li.folderopen {
+    list-style-image: url("icons/fileopen.png");
+}
+li.folderhome {
+    list-style-image: url("icons/folder_home.png");
+}
+li.article {
+    list-style-image: url("icons/view_choose.png");
+}
+li.current {
+    list-style-image: url("icons/1rightarrow.png");
+}
+li.created {
+    list-style-image: url("icons/bookmark.png");
+}
+li.modified {
+    list-style-image: url("icons/history.png");
+}
+.footer {
+    clear: both;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}

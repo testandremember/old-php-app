@@ -1,0 +1,46 @@
+/* body {background-color:#000; font-size:0.9em; font-family:verdana, arial, sans-serif; text-align:center; margin:0 40px 20px 40px;} */
+h1 {text-align:center; margin-top:.3em;  margin-bottom:0}
+img {border:0 }
+a:hover {color:red; text-decoration:none;}
+#wrap {text-align:left;}
+.logo {float:left;}
+/* .descout {margin:20px 0 20px 20px;  margin-left:365px; color:white; border:1px solid white;}
+ .descin {padding:1em;  margin:3px; border:1px solid white;}
+ */
+  .description {margin:5px; margin-left:365px; color:white; border:1px solid white; padding:1em}
+.desctitle {font-size:0.75em; margin-bottom:0.5em; margin-top:-0.5em; text-align:center;}
+#main {clear:both; padding:3px; background-color:#b2b2b2;}
+.searchbar, .nav, .topnav {
+    padding:5px;
+    /* background-color:#9fbce3;
+    border:1px solid black;
+    margin-bottom:20px; */
+}
+.nav {padding-bottom:1em;}
+.poem, .search, .ads {text-align:center}
+#leftcol {float:left; width:200px;}
+.heading {margin-bottom:1em; font-size:1.3em; font-weight:bold; text-align:center; border-bottom:2px dotted #000}
+#rightcol {margin-left:220px; padding:10px; border:1px solid black; background-color:white;}
+.created, .author {text-align:left; font-style:italic;}
+.copyright {text-align:center; color:#fff; font-size:.8em;}
+li.folder {
+    list-style-image: url("icons/folder.png");
+}
+li.folderopen {
+    list-style-image: url("icons/fileopen.png");
+}
+li.folderhome {
+    list-style-image: url("icons/folder_home.png");
+}
+li.article {
+    list-style-image: url("icons/view_choose.png");
+}
+li.current {
+    list-style-image: url("icons/1rightarrow.png");
+}
+li.created {
+    list-style-image: url("icons/bookmark.png");
+}
+li.modified {
+    list-style-image: url("icons/history.png");
+}
