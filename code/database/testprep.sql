@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 31, 2013 at 04:13 AM
+-- Generation Time: Dec 31, 2013 at 09:36 PM
 -- Server version: 5.6.12-log
--- PHP Version: 5.4.12
+-- PHP Version: 5.4.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -241,7 +241,6 @@ CREATE TABLE IF NOT EXISTS `cp_hit_log` (
   UNIQUE KEY `id` (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
-
 -- --------------------------------------------------------
 
 --
@@ -277,6 +276,7 @@ CREATE TABLE IF NOT EXISTS `cp_members` (
   KEY `id` (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=82 ;
 
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `cp_member_pages`
@@ -303,6 +303,8 @@ CREATE TABLE IF NOT EXISTS `cp_member_pages` (
   `active` smallint(1) unsigned NOT NULL DEFAULT '1',
   KEY `id` (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=192 ;
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `cp_member_pictures`
@@ -622,7 +624,14 @@ CREATE TABLE IF NOT EXISTS `guest_event_log` (
   `more_info` text NOT NULL,
   UNIQUE KEY `id` (`id`),
   KEY `event_id` (`event_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `guest_event_log`
+--
+
+INSERT INTO `guest_event_log` (`id`, `event_id`, `date`, `uri`, `referrer`, `ip`, `host`, `ua`, `member_id`, `session_id`, `more_info`) VALUES
+(1, 10, '1388525586', '/testandremember/code/www/testprep/', '', '::1', 'annalofgren', 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', 0, '', '');
 
 -- --------------------------------------------------------
 
@@ -900,7 +909,15 @@ CREATE TABLE IF NOT EXISTS `www_hit_log` (
   `ua` varchar(255) NOT NULL DEFAULT '',
   `session_id` varchar(32) NOT NULL DEFAULT '',
   UNIQUE KEY `id` (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `www_hit_log`
+--
+
+INSERT INTO `www_hit_log` (`id`, `date`, `uri`, `referrer`, `ip`, `host`, `ua`, `session_id`) VALUES
+(1, '1388525586', '/testandremember/code/www/testprep/', '', '::1', 'annalofgren', 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', ''),
+(2, '1388525674', '/testandremember/code/www/testprep/', '', '::1', 'annalofgren', 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36', '');
 
 -- --------------------------------------------------------
 
@@ -934,7 +951,7 @@ CREATE TABLE IF NOT EXISTS `www_pages` (
 --
 
 INSERT INTO `www_pages` (`id`, `uri`, `query_string`, `parent_id`, `title`, `description`, `heading`, `content`, `left_menu`, `link_title`, `show_on_menu`, `menu_parent_id`, `subtype`, `author`, `creation_date`, `last_modified`) VALUES
-(1, '/testprep/', '', 0, 'Test Prep Questions', '', 'Test Prep Questions', '', '', 'Test Prep Questions', 1, 0, 5, 0, '', '1103946948'),
+(1, '/testandremember/code/www/testprep/', '', 0, 'Test Prep Questions', '', 'Test Prep Questions', '', '', 'Test Prep Questions', 1, 0, 5, 0, '', '1103946948'),
 (6, '/multiple-choice.php', '', 1, 'Multiple Choice Questions', '', 'Multiple Choice Questions', '', '', 'Multiple Choice Questions', 0, 1, 5, 0, '', ''),
 (5, '/sitemap/', '', 1, 'Site Map', 'This is the site map', 'Site Map', '<p>Below is the site map:</p>', '', 'Site Map', 1, 1, 3, 0, '', '1103960908');
 
